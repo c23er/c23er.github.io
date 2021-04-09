@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.basketball{
+			width: 100px;
+			height: 100px;
+			background-size: contain;
+			background-image: url(http://assets.stickpng.com/images/5856a4f24f6ae202fedf2760.png);
+			background-repeat: no-repeat;
+			display: inline-block;
+			position: absolute;
+
+
+		}
+
+		</style>
+
+</head>
+<body>
+
+	<div id="basketball"></div>
+
+	<script type="text/javascript">
+		
+		
+
+		document.addEventListener("click", function makeBasketball(){
+
+			var basketball = document.createElement('div');
+			document.body.appendChild(basketball);
+			basketball.classList.add('basketball');
+			basketball.style.left = event.clientX - 50 +'px';
+		basketball.style.top = event.clientY - 50 +'px';
+
+			
+		});
+	</script>
+
+</body>
+</html>
