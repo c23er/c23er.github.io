@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#basketball{
+			width: 100px;
+			height: 100px;
+			z-index: -1;
+			background-size: contain;
+			background-image: url(http://assets.stickpng.com/images/5856a4f24f6ae202fedf2760.png);
+			top: 75%;
+			left: 75%;
+			background-repeat: no-repeat;
+			display: inline-block;
+			position: absolute;
+
+			animation-name: shoot;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+
+
+		}
+
+		#basketballhoop{
+			width: 400px;
+			height:400px;
+			z-index: 1;
+			background-image: url(bballEmmett.png);
+			position: absolute;
+			background-size:contain;
+			background-repeat:no-repeat;
+
+			
+		}
+
+
+
+@keyframes shoot {
+        0% {
+           left: 1000px;
+           top: 800px;
+        }
+
+        25% {
+            left: 800px;
+           top: 600px;
+        }
+
+        50% {
+            left: 600px;
+           top: 400px;
+        }
+
+        75% {
+          left: 400px;
+           top: 200px;
+        }
+
+        100% {
+            left: 200px;
+           top: 0px;
+
+		}
+		
+
+	</style>
+
+</head>
+<body>
+
+	<div id="basketball"></div>
+	<div id="basketballhoop"></div>
+
+	<script type="text/javascript">
+	</script>
+
+</body>
+</html>
