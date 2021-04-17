@@ -82,8 +82,47 @@
         100% {
             left:0px;
         }
+
+    .balloon{
+            width:220px;
+            height:176px;
+            background-size: contain;
+            background-image: url(blue-balloon-clipart.png); 
+
+            animation-name: float;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: relative;
+            display: inline-block;
+    }
+
+@keyframes float {
+        0% {
+           top: 1000px;
+        }
+
+        25% {
+            top:750px;
+        }
+
+        50% {
+            top:500px;
+        }
+
+        75% {
+          top:250px;
+        }
+
+        100% {
+            top:0px;
+        }
+
+
+
     }
     </style>
+
+
 
 
 </head>

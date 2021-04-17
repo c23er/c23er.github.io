@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	
+
+#dog{
+
+	width: 500px;
+	height:500px;
+	background-color: white;
+	background-size: contain;
+	background-repeat:no-repeat;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+	<center><h1>Which Dog Will you Own?</h1></center>
+	<center>
+	
+		<div id="dog">
+			
+
+		</div>
+
+	</center>
+
+	<script type="text/javascript">
+		
+		var cow = -1
+
+		var colors = ["purple", "yellow", "lavendar", "red", "black", "orange", "magenta"]
+
+		var images = ["url(https://www.dogsforgood.org/app/uploads/2019/06/Georgie-web.jpg)","url(https://images.saymedia-content.com/.image/t_share/MTc0OTY5NzExODI4ODA1NjAw/fact-about-blue-nose-pit-bulls-and-red-nose-pit-bulls.jpg)", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ThreeTimeAKCGoldWinnerPembrookeWelshCorgi.jpg/1200px-ThreeTimeAKCGoldWinnerPembrookeWelshCorgi.jpg)", "url(https://vetstreet.brightspotcdn.com/dims4/default/5298792/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F3d%2F174bd0a0d511e0a2380050568d634f%2Ffile%2FFrench-Bulldog-5-645mk062111.jpg)", "url(https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2020/04/pugs-coronavirus.jpg?quality=80&strip=all&ssl=1)"]
+
+		var floof = document.getElementById('dog');
+
+		floof.addEventListener("click", function(){
+
+			var pig = Math.floor(Math.random()*5);
+
+			console.log(images[pig])
+
+			floof.style.backgroundImage = images[cow]
+
+			console.log(cow = cow + 1)
+
+	})
+
+	</script>
+
+</body>
+</html>
