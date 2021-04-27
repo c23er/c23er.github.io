@@ -1,32 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<title>
 		
 	</title>
-</head>
-<style type="text/css">
+	<style type="text/css">
 	
 	#graduation{
-		background-image: url(https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg);
+		height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
+			background-image: url(https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg);
 	}
 	#darkfantasy{
 		background-image: url(https://linkstorage.linkfire.com/medialinks/images/b617b39a-dc65-4467-a830-4decf062d720/artwork-440x440.jpg);
+		height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	#ledzeppliniv{
 		background-image: url(https://images-na.ssl-images-amazon.com/images/I/51h-cJeHf0L.jpg);
-
+height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	#areyouexperienced{
 		background-image: url(https://images-na.ssl-images-amazon.com/images/I/61ybI8BGViL._SX466_.jpg);
+	height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#circles{
+		background-image: url(https://upload.wikimedia.org/wikipedia/en/1/15/Mac_Miller_-_Circles.png);
+	height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		
 	}
 
-
 </style>
-<body>
+
+</head>
+<body style="background-color: gainsboro">
 <div id="graduation"></div>
 <div id="darkfantasy"></div>
 <div id="ledzeppliniv"></div>
 <div id="areyouexperienced"></div>
+<div id="circles"></div>
+
+
+<audio id="Homecoming" src="./Graduation/Homecoming.mp3" controls></audio>
+<audio id="Stronger" src="./Graduation/stronger.mp3" controls></audio>
+<audio id="TheGlory" src="./Graduation/The Glory.mp3" controls></audio>
+<audio id="IWonder" src="./Graduation/I Wonder.mp3" controls></audio>
+<audio id="GoodMorning" src="./Graduation/Good Morning.mp3" controls></audio>
+<audio id="GoodLife" src="./Graduation/Good Life.mp3" controls></audio>
+<audio id="FlashingLights" src="./Graduation/Flashing Lights.mp3" controls></audio>
+<audio id="CTMN" src="./Graduation/Cant Tell Me Nothing.mp3" controls></audio>
+<audio id="EverythingIAm" src="./Graduation/Everything I Am.mp3" controls></audio>
+<audio id="Champion" src="./Graduation/Champion.mp3" controls></audio>
+
+
+<script type="text/javascript">
+		
+	var Homecoming = document.getElementById("Homecoming");
+	var Stronger = document.getElementById("Stronger")
+	var TheGlory = document.getElementById("TheGlory")
+	var IWonder = document.getElementById("IWonder")
+	var GoodMorning = document.getElementById("GoodMorning")
+	var GoodLife = document.getElementById("GoodLife")
+	var FlashingLights = document.getElementById("FlashingLights")
+	var CTMN = document.getElementById("CTMN")
+	var EverythingIAm = document.getElementById("EverythingIAm")
+	var Champion = document.getElementById("Champion")
+
+	var HomecomingAudio = document.getElementById("Homecoming.mp3")
+	var StrongerAudio = document.getElementById("stronger.mp3")
+	var TheGloryAudio = document.getElementById("The Glory.mp3")
+	var IWonderAudio = document.getElementById("I Wonder.mp3")
+	var GoodMorningAudio = document.getElementById("Good Morning.mp3")
+	var FlashingLightsAudio = document.getElementById("Flashing Lights.mp3")
+	var CTMNAudio = document.getElementById("Cant Tell Me Nothing.mp3")
+	var EverythingIAmAudio = document.getElementById("Everything I Am.mp3")
+	var ChampionAudio = document.getElementById("Champion.mp3")
+
+	graduation.addEventListener ('click', function(){Homecoming.play()})
+	graduation.addEventListener ('click', function(){Stronger.play()})
+	graduation.addEventListener ('click', function(){TheGlory.play()})
+	graduation.addEventListener ('click', function(){IWonder.play()})
+	graduation.addEventListener ('click', function(){GoodMorning.play()})
+	graduation.addEventListener ('click', function(){GoodLife.play()})
+	graduation.addEventListener ('click', function(){FlashingLights.play()})
+	graduation.addEventListener ('click', function(){CTMN.play()})
+	graduation.addEventListener ('click', function(){EverythingIAm.play()})
+	graduation.addEventListener ('click', function(){Champion.play()})
+
+</script>
+
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css":>
+		
+		.waffles{
+			width: 100px;
+			height:100px;
+			background-image: url(https://images.kglobalservices.com/www.leggomyeggo.com/en_us/product/product_4821918/kicproductimage-123230_00038000404405_c1l1.png);
+			background-size:contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	
+	function makeWaffles (){
+		var waffle = document.createElement("div"); //this is the div we are creating//
+		document.body.appendChild(waffle); //this is the waffle we are making, we are putting the waffle inside the body//
+		waffle.classList.add('waffles'); //this is the picture we are using in the div//
+	}
+	makeWaffles(); //this is how we make the waffles//
+	makeWaffles();
+	makeWaffles();
+</script>
+</body>
+</html>

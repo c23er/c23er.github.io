@@ -16,7 +16,11 @@
 			display: inline-block;
 			position: absolute;
 
-			animation-name: shoot;
+			animation-name: shoot1;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+
+			animation-name: shoot2;
 			animation-duration: 3s;
 			animation-iteration-count: infinite;
 
@@ -37,7 +41,7 @@
 
 
 
-@keyframes shoot {
+@keyframes shoot1 {
         0% {
            left: 1000px;
            top: 800px;
@@ -90,7 +94,59 @@
 
 		}
 		
+@keyframes shoot2 {
+        0% {
+           left: 1000px;
+           top: 800px;
+        }
+        20%{
+        	left: 890px;
+        	top: 700px;
 
+        }
+
+        40% {
+        	left: 760px;
+        	top:500px;
+
+        }
+
+        55% {
+            left: 600px;
+           top: 380px;
+        }
+
+        70% {
+            left: 430px;
+           top: 250px;
+        }
+
+        80% {
+          left: 250px;
+           top: 100px;
+           z-index: 1;
+        }
+
+        85%{
+        	left: 230px;
+        	top:130px;
+        	z-index: 1;
+        }
+
+        90% {
+            left: 200px;
+           top: 220px;
+           z-index: -1;
+
+		}
+
+		100%{
+			left: 200px;
+			top:350px;
+			z-index: 1;
+
+		}
+		
 	</style>
 
 </head>
