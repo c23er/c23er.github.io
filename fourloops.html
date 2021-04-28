@@ -17,14 +17,17 @@
 <body>
 <script type="text/javascript">
 	
-	function makeWaffles (){
+	function makeWaffles (x){
 		var waffle = document.createElement("div"); //this is the div we are creating//
 		document.body.appendChild(waffle); //this is the waffle we are making, we are putting the waffle inside the body//
 		waffle.classList.add('waffles'); //this is the picture we are using in the div//
+
+		waffle.innerText = x;
 	}
-	makeWaffles(); //this is how we make the waffles//
-	makeWaffles();
-	makeWaffles();
+	
+
+	for (var counter = 0; counter < 1000; counter=counter+1) {makeWaffles(counter);}
+
 </script>
 </body>
 </html>
