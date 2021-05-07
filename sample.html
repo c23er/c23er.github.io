@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	
+#box  {
+			width: 250px;
+			height:250px;	
+			background-color:red;
+
+</style>
+
+</head>
+<body>
+	<div id="box"></div>
+
+	<script type="text/javascript">
+		
+		var change = document.getElementById('box')
+
+		var apples = 0;
+		change.addEventListener('click', function(){
+
+		apples = apples + 1;
+console.log(apples)
+
+if(apples%2 == 1) {
+	box.style.backgroundColor ="red";
+	}
+
+else if (apples%2 ==0) {
+	box.style.backgroundColor ="blue";
+	}
+if (apples%3 == 0)
+	{	box.style.backgroundColor = "yellow";
+	}
+	})
+	</script>
+</body>
+</html>

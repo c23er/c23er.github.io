@@ -77,7 +77,23 @@ height: 200px;
 <audio id="Runaway" src="./My Beautiful Dark Twisted Fantasy/Runaway.mp3" controls></audio>
 <audio id="SoAppalled" src="./My Beautiful Dark Twisted Fantasy/So Appalled.mp3" controls></audio>
 
+<audio id="BlueWorld" src="./Circles/Mac Miller - Blue World.mp3" controls></audio>
+<audio id="Circles" src="./Circles/Mac Miller - Circles.mp3" controls></audio>
+<audio id="Complicated" src="./Circles/Mac Miller - Complicated.mp3"></audio>
+<audio id="Everybody" src="./Circles/Mac Miller - Everybody.mp3" controls></audio>
+<audio id="GoodNews" src="./Circles/Mac Miller - Good News.mp3" controls></audio>
+<audio id="HandMeDowns" src="./Circles/Mac Miller - Hand Me Downs.mp3" controls></audio>
+<audio id="Surf" src="./Circles/Mac Miller - Surf.mp3" controls></audio>
+<audio id="Woods" src="./Circles/Mac Miller - Woods.mp3" controls></audio>
 
+<audio id="BlackDog" src="./Led Zepplin IV/Black Dog (Remaster).mp3" controls></audio>
+<audio id="FourSticks" src="./Led Zepplin IV/Four Sticks (Remaster).mp3" controls></audio>
+<audio id="GoingToCalifornia" src="./Led Zepplin IV/Going To California (Remaster).mp3" controls></audio>
+<audio id="MistyMountainHop" src="./Led Zepplin IV/Misty Mountain Hop (Remaster).mp3" controls></audio>
+<audio id="RockAndRoll" src="./Led Zepplin IV/Rock and Roll (Remaster).mp3" controls></audio>
+<audio id="StairwayToHeaven" src="./Led Zepplin IV/Stairway To Heaven (Remaster).mp3" controls></audio>
+<audio id="TheBattleOfEvermore" src="./Led Zepplin IV/The Battle Of Evermore (Remaster).mp3" controls></audio>
+<audio id="WhenTheLeveeBreaks" src="./Led Zepplin IV/When The Levee Breaks (Remaster).mp3" controls></audio>
 
 <script type="text/javascript">
 	//these are the variables that point to the audio files//
@@ -103,6 +119,24 @@ height: 200px;
 	var Runaway = document.getElementById("Runaway")
 	var SoAppalled = document.getElementById("SoAppalled")
 
+	var BlueWorld = document.getElementById("BlueWorld")
+	var Circles = document.getElementById("Circles")
+	var Complicated = document.getElementById("Complicated")
+	var Everybody = document.getElementById("Everybody")
+	var GoodNews = document.getElementById("GoodNews")
+	var HandMeDowns = document.getElementById("HandMeDowns")
+	var Surf = document.getElementById("Surf")
+	var Woods = document.getElementById("Woods")
+
+	var BlackDog = document.getElementById("BlackDog")
+	var FourSticks = document.getElementById("FourSticks")
+	var GoingToCalifornia = document.getElementById("GoingToCalifornia")
+	var MistyMountainHop = document.getElementById("MistyMountainHop")
+	var RockAndRoll = document.getElementById("RockAndRoll")
+	var StairwayToHeaven = document.getElementById("StairwayToHeaven")
+	var TheBattleOfEvermore = document.getElementById("TheBattleOfEvermore")
+	var WhenTheLeveeBreaks = document.getElementById ("WhenTheLeveeBreaks")
+
 	//these are the variables that point to the album covers//
 	var graduation = document.getElementById("graduation")
 	var darkfantasy = document.getElementById("darkfantasy")
@@ -113,11 +147,24 @@ height: 200px;
 
 	// this is a variable that points to an array, that points to variables, that points to audio files//
 	var graduationsongs = [Homecoming, Stronger, TheGlory, IWonder, GoodMorning, GoodLife, FlashingLights, CTMN, EverythingIAm, Champion]
-	var counter = 0
+	var counter = 0;
+
+	var x = Math.round(Math.random()*9)
+
+
 	graduation.addEventListener ('click', function(){
-		var x = Math.round(Math.random()*9)
+		counter = counter + 1;
+		console.log(counter)
+console.log(x)
+		if (counter%2 == 1){
+			graduationsongs[x].play();}
+
+
+		else if (counter%2 == 0){
+
+			graduationsongs[x].pause();}
+
 		
-		graduationsongs[x].play()
 
 
 	})
@@ -127,13 +174,76 @@ height: 200px;
 
 
 	var darkfantasysongs = [AllOfTheLights, BlameGame, DarkFantasyAudio, DIAND, Gorgeous, HellOfALife, Monster, POWER, Runaway, SoAppalled]
+	var x = Math.round(Math.random()*9)
 	darkfantasy.addEventListener ('click', function(){
-		var x = Math.round(Math.random()*9)
 		
-		darkfantasysongs[x].play()
+	counter = counter + 1;
+		console.log(counter)
+console.log(x)
+		if (counter%2 == 1){
+			darkfantasysongs[x].play();}
+
+
+		else if (counter%2 == 0){
+
+			darkfantasysongs[x].pause();}
+
+
+	
 
 
 	})
+
+	var ledzepplinivsongs = [BlackDog, FourSticks, GoingToCalifornia, MistyMountainHop, RockAndRoll, StairwayToHeaven, TheBattleOfEvermore, WhenTheLeveeBreaks]
+	var counter = 0;
+
+	var x = Math.round(Math.random()*7)
+
+
+	ledzeppliniv.addEventListener ('click', function(){
+		counter = counter + 1;
+		console.log(counter)
+console.log(x)
+		if (counter%2 == 1){
+			ledzepplinivsongs[x].play();}
+
+
+		else if (counter%2 == 0){
+
+			ledzepplinivsongs[x].pause();}
+
+		
+
+
+	})
+
+	var circlessongs = [BlueWorld, Circles, Complicated, Everybody, GoodNews, HandMeDowns, Surf, Woods,]
+	var x = Math.round(Math.random()*7)
+	circles.addEventListener ('click', function(){
+		
+	counter = counter + 1;
+		console.log(counter)
+console.log(x)
+		if (counter%2 == 1){
+			circlessongs[x].play();
+
+		}
+
+
+		else if (counter%2 == 0){
+
+			circlessongs[x].pause();}
+
+		if (counter%3 == 0){
+
+circlessongs[x].play();
+		}
+
+
+	})
+
+
+
 </script>
 
 </body>

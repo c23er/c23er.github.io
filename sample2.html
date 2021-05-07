@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>
+		Emmett's Favorite Albums
+	</title>
+	<style type="text/css">
+	
+	#graduation{
+		height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
+			background-image: url(https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg);
+	}
+	#darkfantasy{
+		background-image: url(https://linkstorage.linkfire.com/medialinks/images/b617b39a-dc65-4467-a830-4decf062d720/artwork-440x440.jpg);
+		height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#ledzeppliniv{
+		background-image: url(https://images-na.ssl-images-amazon.com/images/I/51h-cJeHf0L.jpg);
+height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#areyouexperienced{
+		background-image: url(https://images-na.ssl-images-amazon.com/images/I/61ybI8BGViL._SX466_.jpg);
+	height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#circles{
+		background-image: url(https://upload.wikimedia.org/wikipedia/en/1/15/Mac_Miller_-_Circles.png);
+	height: 200px;
+		width:200px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		
+	}
+
+</style>
+
+</head>
+<body style="background-color: gainsboro">
+<div id="graduation"></div>
+<div id="darkfantasy"></div>
+<div id="ledzeppliniv"></div>
+<div id="areyouexperienced"></div>
+<div id="circles"></div>
+
+
+<audio id="Homecoming" src="./Graduation/Homecoming.mp3" controls></audio>
+<audio id="Stronger" src="./Graduation/stronger.mp3" controls></audio>
+<audio id="TheGlory" src="./Graduation/The Glory.mp3" controls></audio>
+<audio id="IWonder" src="./Graduation/I Wonder.mp3" controls></audio>
+<audio id="GoodMorning" src="./Graduation/Good Morning.mp3" controls></audio>
+<audio id="GoodLife" src="./Graduation/Good Life.mp3" controls></audio>
+<audio id="FlashingLights" src="./Graduation/Flashing Lights.mp3" controls></audio>
+<audio id="CTMN" src="./Graduation/Cant Tell Me Nothing.mp3" controls></audio>
+<audio id="EverythingIAm" src="./Graduation/Everything I Am.mp3" controls></audio>
+<audio id="Champion" src="./Graduation/Champion.mp3" controls></audio>
+
+
+<script type="text/javascript">
+	//these are the variables that point to the audio files//
+	var Homecoming = document.getElementById("Homecoming");
+	var Stronger = document.getElementById("Stronger")
+	var TheGlory = document.getElementById("TheGlory")
+	var IWonder = document.getElementById("IWonder")
+	var GoodMorning = document.getElementById("GoodMorning")
+	var GoodLife = document.getElementById("GoodLife")
+	var FlashingLights = document.getElementById("FlashingLights")
+	var CTMN = document.getElementById("CTMN")
+	var EverythingIAm = document.getElementById("EverythingIAm")
+	var Champion = document.getElementById("Champion")
+
+
+	//these are the variables that point to the album covers//
+	var graduation = document.getElementById("graduation")
+	var darkfantasy = document.getElementById("darkfantasy")
+	var areyouexperienced = document.getElementById("areyouexperienced")
+	var ledzeppliniv = document.getElementById("ledzeppliniv")
+	var circles = document.getElementById("circles")
+
+
+	// this is a variable that points to an array, that points to variables, that points to audio files//
+	var graduationsongs = [Homecoming, Stronger, TheGlory, IWonder, GoodMorning, GoodLife, FlashingLights, CTMN, EverythingIAm, Champion]
+	var counter = 0;
+
+	var x = Math.round(Math.random()*9)
+
+
+	graduation.addEventListener ('click', function(){
+		counter = counter + 1;
+		console.log(counter)
+console.log(x)
+		if (counter%2 == 1){
+			graduationsongs[x].play();}
+
+
+		else if (counter%2 == 0){
+
+			graduationsongs[x].pause();}
+
+		
+
+
+	})
+	// click1 = play, click2 = pause, click3 = play, click4 = pause
+		//pattern = odds clicks play, evens clicks pause, even = divisible by 2, no remainder,
+	//
+
+
+
+
+</script>
+
+</body>
+</html>
