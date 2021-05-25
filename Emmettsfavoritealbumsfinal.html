@@ -6,56 +6,56 @@
 		Emmett's Favorite Albums
 	</title>
 	<style type="text/css">
-	
+	.covers{
+	width:33%;
+	height: 325px;
+	display: inline-block;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;}
+
 	#graduation{
-		height: 200px;
-		width:200px;
-		background-size: contain;
-		background-repeat: no-repeat;
-			background-image: url(https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg);
+
+		background-image: url(https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg);
+
 	}
 	#darkfantasy{
 		background-image: url(https://linkstorage.linkfire.com/medialinks/images/b617b39a-dc65-4467-a830-4decf062d720/artwork-440x440.jpg);
-		height: 200px;
-		width:200px;
-		background-size: contain;
-		background-repeat: no-repeat;
+
+
 	}
 	#ledzeppliniv{
 		background-image: url(https://images-na.ssl-images-amazon.com/images/I/51h-cJeHf0L.jpg);
-height: 200px;
-		width:200px;
-		background-size: contain;
-		background-repeat: no-repeat;
+
 	}
 	#areyouexperienced{
 		background-image: url(https://images-na.ssl-images-amazon.com/images/I/61ybI8BGViL._SX466_.jpg);
-	height: 200px;
-		width:200px;
-		background-size: contain;
-		background-repeat: no-repeat;
+
 	}
 	#circles{
 		background-image: url(https://upload.wikimedia.org/wikipedia/en/1/15/Mac_Miller_-_Circles.png);
-	height: 200px;
-		width:200px;
-		background-size: contain;
-		background-repeat: no-repeat;
+
 		
+	}
+
+	#thelostboy{
+
+		background-image: url(https://i.scdn.co/image/ab67616d0000b273e6d6d392a66a7f9172fe57c8);
 	}
 
 </style>
 
 </head>
 <body style="background-color: gainsboro">
-<div id="graduation"></div>
-<div id="darkfantasy"></div>
-<div id="ledzeppliniv"></div>
-<div id="areyouexperienced"></div>
-<div id="circles"></div>
+<div class="covers" id="graduation"></div>
+<div class="covers" id="darkfantasy"></div>
+<div class="covers" id="ledzeppliniv"></div>
+<div class="covers" id="areyouexperienced"></div>
+<div class="covers" id="circles"></div>
+<div class="covers" id="thelostboy"></div>
 
 
-<audio id="audio" src="" controls></audio>
+<audio id="audio" src=""></audio>
 
 
 <script type="text/javascript">
@@ -67,11 +67,13 @@ height: 200px;
 	var areyouexperienced = document.getElementById("areyouexperienced")
 	var ledzeppliniv = document.getElementById("ledzeppliniv")
 	var circles = document.getElementById("circles")
+	var thelostboy = document.getElementById("thelostboy")
 
 
 	// this is a variable that points to an array that contains audio files//
 	var graduationsongs = ["Homecoming.mp3", "Stronger.mp3", "TheGlory.mp3", "IWonder.mp3", "GoodMorning.mp3", "GoodLife.mp3", "FlashingLights.mp3", "CTMN.mp3", "EverythingIAm.mp3", "Champion.mp3"]
 	var counter = 0;
+
 
 	
 	var audio = document.getElementById("audio");
@@ -80,7 +82,11 @@ height: 200px;
 	graduation.addEventListener ('click', function(){
 			var x = Math.round(Math.random()*9);
 			audio.src = "./Graduation/" + graduationsongs[x];
-			audio.play();})
+			audio.play();
+
+	console.log(x)
+
+		})
 
 		
 	// click1 = play, click2 = pause, click3 = play, click4 = pause
@@ -92,6 +98,7 @@ height: 200px;
 	var counter = 0;
 
 
+
 	
 	var audio = document.getElementById("audio");
 
@@ -99,7 +106,9 @@ height: 200px;
 	darkfantasy.addEventListener ('click', function(){
 			var x = Math.round(Math.random()*10);
 			audio.src = "./My Beautiful Dark Twisted Fantasy/" + darkfantasysongs[x];
-			audio.play();})
+			audio.play();
+console.log(x)
+		})
 
 var ledzepplinivsongs = ["BlackDog.mp3", "FourSticks.mp3", "GoingToCalifornia.mp3", "MistyMountainHop.mp3", "RockandRoll.mp3", "StairwaytoHeaven.mp3", "TheBattleofEvermore.mp3", "WhentheLeveeBreaks.mp3"]
 	var counter = 0;
@@ -111,11 +120,31 @@ var ledzepplinivsongs = ["BlackDog.mp3", "FourSticks.mp3", "GoingToCalifornia.mp
 	ledzeppliniv.addEventListener ('click', function(){
 			var x = Math.round(Math.random()*7);
 			audio.src = "./Led Zepplin IV/" + ledzepplinivsongs[x];
-			audio.play();})
+			audio.play();
 
+console.log(x)
+		})
 
-	var circlessongs = ["BlueWorld.mp3", "Circles.mp3", "Complicated.mp3", "Everybody.mp3", "GoodNews.mp3", "HandMeDown.mp3", "Surf.mp3", "Woods.mp3",]
+var areyouexperiencedsongs = ["AreYouExperienced.mp3", "Fire.mp3", "FoxeyLady.mp3", "HeyJoe.mp3", "HighwayChile.mp3", "LoveOrConfusion.mp3", "PurpleHaze.mp3", "RedHouse.mp3","StoneFree.mp3", "TheWindCriesMary.mp3", "ThirdStoneFromTheSun.mp3"]
 	var counter = 0;
+
+	
+	var audio = document.getElementById("audio");
+
+
+	areyouexperienced.addEventListener ('click', function(){
+			var x = Math.round(Math.random()*10);
+			audio.src = "./Are You Experienced/" + areyouexperiencedsongs[x];
+			audio.play();
+
+console.log(x)
+		})
+
+
+
+	var circlessongs = ["BlueWorld.mp3", "Circles.mp3", "Complicated.mp3", "Everybody.mp3", "GoodNews.mp3", "HandMeDowns.mp3", "Surf.mp3", "Woods.mp3",]
+	var counter = 0;
+
 
 	
 	var audio = document.getElementById("audio");
@@ -124,7 +153,27 @@ var ledzepplinivsongs = ["BlackDog.mp3", "FourSticks.mp3", "GoingToCalifornia.mp
 	circles.addEventListener ('click', function(){
 			var x = Math.round(Math.random()*7);
 			audio.src = "./Circles/" + circlessongs[x];
-			audio.play();})
+			audio.play();
+
+console.log(x)
+		})
+
+	var thelostboysongs = ["BadIdea.mp3", "FamilyMatters.mp3", "HaveMercy.mp3", "Lost&Found.mp3", "NightmaresAreReal.mp3", "RNP.mp3", "Thanksgiving.mp3", "ThousandWords.mp3", "WayBackHome.mp3", "WeGonMakeIt.mp3", "Wintertime.mp3"]
+	var counter = 0;
+
+
+	
+	var audio = document.getElementById("audio");
+
+
+	thelostboy.addEventListener ('click', function(){
+			var x = Math.round(Math.random()*10);
+			audio.src = "./The Lost Boy/" + thelostboysongs[x];
+			audio.play();
+
+	console.log(x)
+
+		})
 
 
 
